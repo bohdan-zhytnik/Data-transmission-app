@@ -24,6 +24,6 @@ This repository contains a simple application for transferring files between dev
    - The Receiver verifies each packet using the CRC checksum.  
    - If a packet is corrupted or lost, the Receiver requests retransmission.
 4. **Integrity Check**:  
-   - After all packets are received, the Receiver computes a file-level hash (e.g., MD5 or SHA-256).  
+   - After all packets are received, the Receiver computes a file-level hash.  
    - The Sender sends its own hash of the original file.  
    - The Receiver compares hashes to confirm file integrity.
